@@ -223,4 +223,14 @@ Section:NewButton("velocity break", "ButtonInfo", function()
     end
   end)
 
+local Section = Tab:NewSection("anti")
 
+Section:NewButton("anti MessageGUI", "ButtonInfo", function()
+while task.wait() do
+  for _, v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+    if v.Name == "MessageGUI" then
+      v:Destroy()
+    end
+  end
+end
+  end)
