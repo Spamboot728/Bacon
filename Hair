@@ -75,7 +75,7 @@ Section:NewButton("loop nuke", "ButtonInfo", function()
 Section:NewButton("nuke crash", "ButtonInfo", function()
     workspace.nuke.explosions:Destroy()
     while task.wait() do
-      for _ = 1, 500 do
+      for i = 1, 500 do
         fireclickdetector(workspace.nuke.button.ClickDetector
         end
       end
