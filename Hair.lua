@@ -76,7 +76,7 @@ Section:NewButton("nuke crash", "ButtonInfo", function()
     workspace.nuke.explosions:Destroy()
     while task.wait() do
       for _ = 1, 500 do
-        fireclickdetector(workspace.nuke.button.ClickDetector
+        fireclickdetector(workspace.nuke.button.ClickDetector)
         end
       end
     end)
