@@ -206,7 +206,7 @@ workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(ohString1)
 end)
 
 Section:NewButton("dog lag", "ButtonInfo", function()
-    local cmds = {":dog all", ":music 4601957187", ":clone all", ":name all !!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!"}
+    local cmds = {":dog all", ":clone all", ":name all !!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!", ":music 4601957187"}
 for _, v in pairs(cmds) do
       while task.wait() do
         workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
@@ -225,7 +225,7 @@ Section:NewButton("velocity break", "ButtonInfo", function()
 
 local Section = Tab:NewSection("anti")
 
-Section:NewButton("anti MessageGUI", "ButtonInfo", function()
+Section:NewButton("MessageGUI", "ButtonInfo", function()
 while task.wait() do
   for _, v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
     if v.Name == "MessageGUI" then
