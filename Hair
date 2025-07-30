@@ -1,4 +1,8 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeianRussell/Kavo-UI-Library/main/Movable.source.lua"))()
+e.nuke.explosions:Destroy()
+while task.wait() do
+  for i = 1, 200 do
+    fireclickdetector(workspace.nuke.button.ClickDetector)
+  endlocal Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeianRussell/Kavo-UI-Library/main/Movable.source.lua"))()
 local Window = Library.CreateLib("retro_destruct", "Ocean")
 
 --main
@@ -67,10 +71,19 @@ Section:NewButton("nuke", "ButtonInfo", function()
 end)
 
 Section:NewButton("loop nuke", "ButtonInfo", function()
-  while task.wait(0.1) do
-    fireclickdetector(workspace.nuke.button.ClickDetector)
+    while task.wait(0.1) do
+      fireclickdetector(workspace.nuke.button.ClickDetector)
     end
-end)
+  end)
+
+Section:NewButton("nuke crash", "ButtonInfo", function()
+    workspace.nuke.explosions:Destroy()
+    while task.wait() do
+      for _ = 1, 500 do
+        fireclickdetector(workspace.nuke.button.ClickDetector
+        end
+      end
+    end)
 
 --prison life
 
@@ -206,11 +219,10 @@ workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(ohString1)
 end)
 
 Section:NewButton("dog lag", "ButtonInfo", function()
-    local cmds = {":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all", ":swagify all"
-    }
-for _, v in pairs(cmds) do
-      while task.wait() do
-        workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
+    local cmds = {":music 4601957187", ":dog all", ":clone all", ":name all !!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!"}
+    while task.wait() do
+      for _, v in pairs(cmds) do
+      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
       end
     end
   end)
