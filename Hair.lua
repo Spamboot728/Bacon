@@ -4,6 +4,7 @@ local Window = Library.CreateLib("retro_destruct", "Ocean")
 --main
 
 local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
 local Section = Tab:NewSection("tool giver model (only works in 2014+ games)")
 
 Section:NewButton("give tool", "ButtonInfo", function()
@@ -46,13 +47,6 @@ if v:IsA("BasePart") or v:IsA("Part") then
   end
 end)
 
-local Section = Tab:NewSection("PlayerGui")
-Section:NewButton("ban gui", "ButtonInfo", function()
-    local LocalPayer = game.Players.LocalPlayer
-    LocalPlayer.PlayerGui:WaitForChild("ScreenGui")
-    LocalPlayer.PlayerGui.BanGui.Enabled = true
-end)
-
 --watch a tv
 
 local Tab = Window:NewTab("Watch a TV!")
@@ -72,11 +66,11 @@ Section:NewButton("loop nuke", "ButtonInfo", function()
     end
   end)
 
-Section:NewButton("nuke crash", "ButtonInfo", function()
+Section:NewButton("nuke lag", "ButtonInfo", function()
     workspace.nuke.explosions:Destroy()
     while task.wait() do
       for _ = 1, 500 do
-        fireclickdetector(workspace.nuke.button.ClickDetector)
+        fireclickdetector(workspace.nuke.button.ClickDetector
         end
       end
     end)
@@ -232,9 +226,9 @@ Section:NewButton("velocity break", "ButtonInfo", function()
     end
   end)
 
-local Section = Tab:NewSection("anti")
+local Section = Tab:NewSection("anti's")
 
-Section:NewButton("MessageGUI", "ButtonInfo", function()
+Section:NewButton("anti MessageGUI", "ButtonInfo", function()
 while task.wait() do
   for _, v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
     if v.Name == "MessageGUI" then
