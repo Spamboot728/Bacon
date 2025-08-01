@@ -217,6 +217,17 @@ Section:NewButton("dog lag", "ButtonInfo", function()
     end
   end)
 
+Section:NewButton("btools crash", "ButtonInfo", function()
+    while task.wait() do
+      for _ = 1, 100 do
+        local args = {
+          ":btools others"
+        }
+        workspace:WaitForChild("Kohl's Admin Commands V2"):WaitForChild("CMDBARREMOTE"):FireServer(unpack(args))
+      end
+    end
+  end)
+
 local Section = Tab:NewSection("gear glitches")
 
 Section:NewButton("velocity break", "ButtonInfo", function()
