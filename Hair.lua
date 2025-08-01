@@ -17,6 +17,7 @@ for _, v in pairs(workspace:GetDescendants()) do
     end
   end)
 
+local Section = Tab:NewSection("Btools")
 local Section = Tab:NewSection("PaintBucket")
 
 Section:NewTextBox("mass paint", "TextboxInfo", function(txt)
@@ -46,6 +47,19 @@ if v:IsA("BasePart") or v:IsA("Part") then
     end
   end
 end)
+
+local Section = Tab:NewSection("Hammer")
+
+Section:NewButton("clear unlocked parts", "ButtonInfo", function()
+    for _, v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") or v:IsA("Part") then
+local args = {
+	v
+}
+game:GetService("Players").LocalPlayer.Character:WaitForChild("Hammer"):WaitForChild("MouseDown"):FireServer(unpack(args))
+      end
+    end
+  end)
 
 --watch a tv
 
