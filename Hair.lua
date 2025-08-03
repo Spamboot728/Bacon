@@ -56,7 +56,7 @@ if v:IsA("BasePart") or v:IsA("Part") then
 local args = {
 	v
 }
-game:GetService("Players").LocalPlayer.Character:WaitForChild("Hammer"):WaitForChild("MouseDown"):FireServer(unpack(args))
+game:GetService("Players").LocalPlayer.Backpack:WaitForChild("Hammer"):WaitForChild("MouseDown"):FireServer(unpack(args))
       end
     end
   end)
