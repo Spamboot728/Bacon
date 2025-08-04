@@ -96,8 +96,6 @@ Section:NewButton("nuke lag", "ButtonInfo", function()
 local Tab = Window:NewTab("Prison Life")
 local Section = Tab:NewSection("RemoteEvent")
 
-Section:NewLabel("keep your M9/taser unequipped before using buttons!")
-
 Section:NewTextBox("kill player", "TextboxInfo", function(txt)
 local players = game:GetService("Players")
   players:FindFirstChild(txt) do
