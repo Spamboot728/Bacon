@@ -221,8 +221,6 @@ local ohString1 = string.lower(txt)
 workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(ohString1)
 end)
 
-local Section = Tab:NewSection("Crashes")
-
 Section:NewButton("dog lag", "ButtonInfo", function()
     local cmds = {":music 4601957187", ":dog all", ":clone all", ":name all !!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!"}
     while task.wait() do
@@ -240,6 +238,15 @@ Section:NewButton("btools crash", "ButtonInfo", function()
         }
         workspace:WaitForChild("Kohl's Admin Commands V2"):WaitForChild("CMDBARREMOTE"):FireServer(unpack(args))
       end
+    end
+  end)
+
+local Section = Tab:NewSection("gear glitches")
+
+Section:NewButton("velocity break", "ButtonInfo", function()
+    local cmds = {":gear me 119917513", ":gear me 110789105"}
+    for _, v in pairs(cmds) do
+      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
     end
   end)
 
@@ -262,6 +269,24 @@ Section:NewButton("scrash", "ButtonInfo", function()
         task.wait(0.3)
 
         local cmds = {":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others"}
+        for _, v in pairs(cmds) do
+        workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
+        end
+      end
+    end
+  end)
+
+local Section = Tab:NewSection("anti's")
+
+Section:NewButton("anti MessageGUI", "ButtonInfo", function()
+while task.wait() do
+  for _, v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+    if v.Name == "MessageGUI" then
+      v:Destroy()
+    end
+  end
+end
+  end)oke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others"}
         for _, v in pairs(cmds) do
         workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
         end
