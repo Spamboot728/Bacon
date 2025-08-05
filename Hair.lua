@@ -241,15 +241,6 @@ Section:NewButton("btools crash", "ButtonInfo", function()
     end
   end)
 
-local Section = Tab:NewSection("gear glitches")
-
-Section:NewButton("velocity break", "ButtonInfo", function()
-    local cmds = {":gear me 119917513", ":gear me 110789105"}
-    for _, v in pairs(cmds) do
-      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
-    end
-  end)
-
 Section:NewButton("scrash", "ButtonInfo", function()
     
     local LocalPlayer = game.Players.LocalPlayer
@@ -273,6 +264,15 @@ Section:NewButton("scrash", "ButtonInfo", function()
         workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
         end
       end
+    end
+  end)
+
+local Section = Tab:NewSection("gear glitches")
+
+Section:NewButton("velocity break", "ButtonInfo", function()
+    local cmds = {":gear me 119917513", ":gear me 110789105"}
+    for _, v in pairs(cmds) do
+      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
     end
   end)
 
