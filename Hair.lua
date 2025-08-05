@@ -248,19 +248,19 @@ Section:NewButton("scrash", "ButtonInfo", function()
     LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 1000000000000000000, 0)
 
     local cmds = {":time 0", ":fogend 0", ":fogcolor 0 0 0"}
-    for _, v in pairs(cmds) do
+    for _, 1 in pairs(cmds) do
       
       task.wait(0.3)
 
       local cmds = {":jail all", ":bring all", ":m crashed by " .. LocalPlayer.Name .. " using retro_destruct"}
-      for _, v in pairs(cmds) do
+      for _, 2 in pairs(cmds) do
 
         task.wait(0.3)
 
         local cmds = {":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others"}
-        for _, v in pairs(cmds) do
+        for _, 3 in pairs(cmds) do
           while task.wait() do
-            workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
+            workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(1, 2, 3)
           end
         end
       end
