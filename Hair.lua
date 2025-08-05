@@ -172,9 +172,7 @@ Section:NewButton("stun hostile", "ButtonInfo", function()
         3.4036521911621094
       }
     }
-    game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):WaitForChild("Taser"):WaitForChild("Fire"):FireServer(unpack(args))
-    else
-  game:GetService("Players").LocalPlayer:WaitForChild("Character"):WaitForChild("Taser"):WaitForChild("Fire"):FireServer(unpack(args))
+    game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):WaitForChild("Taser"):WaitForChild("Fire"):FireServer(unpack(args)
     end
   end)
 
