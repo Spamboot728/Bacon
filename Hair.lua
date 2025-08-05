@@ -173,6 +173,222 @@ Section:NewButton("stun hostile", "ButtonInfo", function()
       }
     }
     game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):WaitForChild("Taser"):WaitForChild("Fire"):FireServer(unpack(args))
+    else
+  game:GetService("Players").LocalPlayer:WaitForChild("Character"):WaitForChild("Taser"):WaitForChild("Fire"):FireServer(unpack(args))
+    end
+  end)
+
+Section:NewButton("get tools", "ButtonInfo", function()
+  local weapons = workspace.Prison["Weapon Givers"].General
+  for _, v in pairs(weapons:GetDescendants()) do
+      if v:IsA("ClickDetector") then
+        fireclickdetector(v)
+      end
+    end
+  end)
+
+Section:NewButton("destroy hostile zone's", "ButtonInfo", function()
+
+local ExtraProps = workspace.Prison.ExtraProps
+
+    for _, v in pairs(ExtraProps:GetDescendants()) do
+    if v:IsA("Folder") then
+        v:Destroy()
+      end
+    end
+  end)
+
+--goodluck a plates game
+
+local Tab = Window:NewTab("goodluck")
+local Section = Tab:NewSection("PlayerGui")
+
+Section:NewButton("admin shop", "ButtonInfo", function()
+    game.Players.LocalPlayer.PlayerGui.AdminGui.Enabled = true
+end)
+
+Section:NewButton("announcement", "ButtonInfo", function()
+    game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+end)
+
+--khol's admin
+
+local Tab = Window:NewTab("khol's admin")
+local Section = Tab:NewSection("RemoteEvent")
+
+Section:NewTextBox("cmdbar", "TextboxInfo", function(txt)
+    
+local ohString1 = string.lower(txt)
+
+workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(ohString1)
+end)
+
+Section:NewButton("dog lag", "ButtonInfo", function()
+    local cmds = {":music 4601957187", ":dog all", ":clone all", ":name all !!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!BARK!!"}
+    while task.wait() do
+      for _, v in pairs(cmds) do
+      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
+      end
+    end
+  end)
+
+Section:NewButton("btools crash", "ButtonInfo", function()
+    while task.wait() do
+      for _ = 1, 100 do
+        local args = {
+          ":btools others"
+        }
+        workspace:WaitForChild("Kohl's Admin Commands V2"):WaitForChild("CMDBARREMOTE"):FireServer(unpack(args))
+      end
+    end
+  end)
+
+local Section = Tab:NewSection("gear glitches")
+
+Section:NewButton("velocity break", "ButtonInfo", function()
+    local cmds = {":gear me 119917513", ":gear me 110789105"}
+    for _, v in pairs(cmds) do
+      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
+    end
+  end)
+
+Section:NewButton("scrash", "ButtonInfo", function()
+    
+    local LocalPlayer = game.Players.LocalPlayer
+
+    LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 1000000000000000000, 0)
+
+    local cmds = {":time 0", ":fogend 0", ":fogcolor 0 0 0"}
+    for _, v in pairs(cmds) do
+      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
+
+      task.wait(0.3)
+
+      local cmds = {":jail all", ":bring all", ":m crashed by " .. LocalPlayer.Name .. " using retro_destruct"}
+      for _, v in pairs(cmds) do
+        workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
+
+        task.wait(0.3)
+
+        local cmds {":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others"}
+      end
+    end
+  end)
+
+local Section = Tab:NewSection("anti's")
+
+Section:NewButton("anti MessageGUI", "ButtonInfo", function()
+while task.wait() do
+  for _, v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+    if v.Name == "MessageGUI" then
+      v:Destroy()
+    end
+  end
+end
+  end)
+Section:NewButton("nuke", "ButtonInfo", function()
+  fireclickdetector(workspace.nuke.button.ClickDetector)
+end)
+
+Section:NewButton("loop nuke", "ButtonInfo", function()
+    while task.wait(0.1) do
+      fireclickdetector(workspace.nuke.button.ClickDetector)
+    end
+  end)
+
+Section:NewButton("nuke lag", "ButtonInfo", function()
+    workspace.nuke.explosions:Destroy()
+    while task.wait() do
+      for _ = 1, 500 do
+        fireclickdetector(workspace.nuke.button.ClickDetector)
+        end
+      end
+    end)
+
+--prison life
+
+local Tab = Window:NewTab("Prison Life")
+local Section = Tab:NewSection("RemoteEvent")
+
+Section:NewLabel("keep your M9/taser unequipped before using buttons!")
+
+Section:NewTextBox("kill player", "TextboxInfo", function(txt)
+local players = game:GetService("Players")
+  players:FindFirstChild(txt) do
+  local args = {
+    {
+      Instance.new("Part", nil),
+      vector.create(-11.409749984741211, 104.1942367553711, -2.1774664560325618e-07),
+      vector.create(396.7373046875, 202.47799682617188, 378.2291259765625),
+      vector.create(0.10000000149011612, 0.10000000149011612, 3.4036521911621094),
+      game:GetService("Players"):WaitForChild(string.lower(txt)).Character:WaitForChild("HumanoidRootPart"),
+      9e9,
+      2.5060000000000002,
+      3.4036521911621094
+    }
+  }
+  game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):WaitForChild("M9"):WaitForChild("Fire"):FireServer(unpack(args))
+  end
+end)
+
+Section:NewTextBox("stun player", "TextboxInfo", function(txt)
+local players = game:GetService("Players")
+
+for _, plrs in pairs(players:GetChildren()) do
+local args = {
+{
+  Instance.new("Part", nil),
+  vector.create(-11.409749984741211, 104.1942367553711, -2.1774664560325618e-07),
+  vector.create(396.7373046875, 202.47799682617188, 378.2291259765625),
+  vector.create(0.10000000149011612, 0.10000000149011612, 3.4036521911621094),
+
+game:GetService("Players"):WaitForChild(string.lower(txt)).Character:WaitForChild("HumanoidRootPart"),
+  0,
+  2.5060000000000002,
+  3.4036521911621094
+}
+}
+game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):WaitForChild("Taser"):WaitForChild("Fire"):FireServer(unpack(args))
+    end
+  end)
+
+Section:NewButton("kill hostile", "ButtonInfo", function()
+    local players = game:GetService("Players")
+
+    for _, plrs in pairs(players:GetChildren()) do
+    local args = {
+      {
+        Instance.new("Part", nil),
+        vector.create(-11.409749984741211, 104.1942367553711, -2.1774664560325618e-07),
+        vector.create(396.7373046875, 202.47799682617188, 378.2291259765625),
+        vector.create(0.10000000149011612, 0.10000000149011612, 3.4036521911621094),
+        game:GetService("Players"):WaitForChild(plrs.Name).Character:WaitForChild("HumanoidRootPart"),
+        9e9,
+        2.5060000000000002,
+        3.4036521911621094
+      }
+    }
+    game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):WaitForChild("M9"):WaitForChild("Fire"):FireServer(unpack(args))
+    end
+  end)
+
+Section:NewButton("stun hostile", "ButtonInfo", function()
+    local players = game:GetService("Players")
+
+    for _, plrs in pairs(players:GetChildren()) do
+    local args = {
+      {
+        Instance.new("Part", nil),
+        vector.create(-11.409749984741211, 104.1942367553711, -2.1774664560325618e-07),
+        vector.create(396.7373046875, 202.47799682617188, 378.2291259765625),
+        vector.create(0.10000000149011612, 0.10000000149011612, 3.4036521911621094),
+        game:GetService("Players"):WaitForChild(plrs.Name).Character:WaitForChild("HumanoidRootPart"),
+        0,
+        2.5060000000000002,
+        3.4036521911621094
+      }
+    }
+    game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):WaitForChild("Taser"):WaitForChild("Fire"):FireServer(unpack(args))
     end
   end)
 
