@@ -249,13 +249,11 @@ Section:NewButton("scrash", "ButtonInfo", function()
 
     local cmds = {":time 0", ":fogend 0", ":fogcolor 0 0 0"}
     for _, v in pairs(cmds) do
-      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
-
+      
       task.wait(0.3)
 
       local cmds = {":jail all", ":bring all", ":m crashed by " .. LocalPlayer.Name .. " using retro_destruct"}
       for _, v in pairs(cmds) do
-        workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
 
         task.wait(0.3)
 
