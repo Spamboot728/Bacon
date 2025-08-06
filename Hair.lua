@@ -82,8 +82,8 @@ Section:NewButton("loop nuke", "ButtonInfo", function()
 
 Section:NewButton("nuke lag", "ButtonInfo", function()
     workspace.nuke.explosions:Destroy()
-    while task.wait() do
-      for _ = 1, 500 do
+    for _ = 1, 500 do
+      while task.wait() do
         fireclickdetector(workspace.nuke.button.ClickDetector)
         end
       end
@@ -254,7 +254,7 @@ Section:NewButton("scrash", "ButtonInfo", function()
       
       task.wait(0.3)
 
-      local cmds = {":bring all", ":jail others", ":m crashed by " .. LocalPlayer.Name .. " using retro_destruct"}
+      local cmds = {":jail all", ":bring all", ":m crashed by " .. LocalPlayer.Name .. " using retro_destruct"}
       for _, second in pairs(cmds) do
       workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(second)
     end
@@ -268,6 +268,13 @@ Section:NewButton("scrash", "ButtonInfo", function()
       end
     end
   end)
+
+local cmds = {":clone others", ":clone others", ":clone others", ":clone others", ":clone others"}
+for _, fourth in pairs do
+  while task.wait(1) do
+    workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(fourth)
+  end
+end
 
 local Section = Tab:NewSection("gear glitches")
 
