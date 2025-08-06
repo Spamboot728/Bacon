@@ -267,14 +267,14 @@ Section:NewButton("scrash", "ButtonInfo", function()
             workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(third)
       end
     end
-  end)
 
 local cmds = {":clone others", ":clone others", ":clone others", ":clone others", ":clone others"}
 for _, fourth in pairs(cmds) do
-  while task.wait(1) do
-    workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(fourth)
-  end
-end
+      while task.wait(1) do
+        workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(fourth)
+      end
+    end
+  end)
 
 local Section = Tab:NewSection("gear glitches")
 
