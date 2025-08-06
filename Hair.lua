@@ -268,6 +268,47 @@ Section:NewButton("scrash", "ButtonInfo", function()
       end
     end
 
+local cmds = {":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others"}
+    for _, fourth in pairs(cmds) do
+      while task.wait() do
+        workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(fourth)
+      end
+    end
+    
+local cmds = {":clone others", ":clone others", ":clone others", ":clone others", ":clone others"}
+for _, fifth in pairs(cmds) do
+      while task.wait(1) do
+        workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(fifth)
+      end
+    end
+  end)
+
+local Section = Tab:NewSection("gear glitches")
+
+Section:NewButton("velocity break", "ButtonInfo", function()
+    local cmds = {":gear me 119917513", ":gear me 110789105"}
+    for _, v in pairs(cmds) do
+      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
+    end
+  end)
+
+local Section = Tab:NewSection("anti's")
+
+Section:NewButton("anti MessageGUI", "ButtonInfo", function()
+while task.wait() do
+  for _, v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+    if v.Name == "MessageGUI" then
+      v:Destroy()
+    end
+  end
+end
+  end)":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others"}
+        for _, third in pairs(cmds) do
+          while task.wait() do
+            workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(third)
+      end
+    end
+
 local cmds = {":clone others", ":clone others", ":clone others", ":clone others", ":clone others"}
 for _, fourth in pairs(cmds) do
       while task.wait() do
