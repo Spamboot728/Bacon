@@ -270,7 +270,7 @@ Section:NewButton("scrash", "ButtonInfo", function()
 
 local cmds = {":clone others", ":clone others", ":clone others", ":clone others", ":clone others"}
 for _, fourth in pairs(cmds) do
-      while task.wait(1) do
+      while task.wait() do
         workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(fourth)
       end
     end
