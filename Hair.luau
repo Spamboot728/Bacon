@@ -307,10 +307,6 @@ end
 local Tab = Window:NewTab("Extra")
 local Section = Tab:NewSection("Extra (the scripts in this section aren't made by me")
 
-Section:NewTextBox("RETRO_PWN (thanks)", "TextboxInfo", function(txt)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Spamboot728/b/refs/heads/main/B.luau"))()
-end)
-
 Section:NewButton("Inf yield", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
