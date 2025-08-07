@@ -11,8 +11,8 @@ Section:NewButton("give tool", "ButtonInfo", function()
     local plr = game.Players.LocalPlayer
 for _, v in pairs(workspace:GetDescendants()) do
   if v.Name == "PUT THE WEAPON IN THIS BRICK" then
-    firetouchinterest(plr.Character.Torso, v, 0)
-    firetouchinterest(plr.Character.Torso, v, 1)
+    firetouchinterest(plr.Character.HumanoidRootPart, v, 0)
+    firetouchinterest(plr.Character.HumanoidRootPart, v, 1)
       end
     end
   end)
@@ -245,6 +245,8 @@ Section:NewButton("scrash", "ButtonInfo", function()
     
     local LocalPlayer = game.Players.LocalPlayer
 
+    LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 1000000000000000000, 0)
+
     local cmds = {":time 0", ":fogend 0", ":fogcolor 0 0 0"}
     for _, first in pairs(cmds) do
       workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(first)
@@ -256,7 +258,7 @@ Section:NewButton("scrash", "ButtonInfo", function()
       for _, second in pairs(cmds) do
       workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(second)
     end
-        LocalPlayer.Character.Torso.CFrame = CFrame.new(0, 1000000000000000000, 0)
+        
         task.wait(0.3)
 
         local cmds = {":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others"}
@@ -301,3 +303,14 @@ while task.wait() do
   end
 end
   end)
+
+local Tab = Window:NewTab("Extra")
+local Section = Tab:NewSection("Extra (the scripts in this section aren't made by me")
+
+Section:NewTextBox("RETRO_PWN (thanks)", "TextboxInfo", function(txt)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Spamboot728/b/refs/heads/main/B.luau"))()
+end)
+
+Section:NewButton("Inf yield", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
