@@ -245,8 +245,6 @@ Section:NewButton("scrash", "ButtonInfo", function()
     
     local LocalPlayer = game.Players.LocalPlayer
 
-    LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 1000000000000000000, 0)
-
     local cmds = {":time 0", ":fogend 0", ":fogcolor 0 0 0"}
     for _, first in pairs(cmds) do
       workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(first)
