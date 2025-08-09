@@ -241,11 +241,46 @@ Section:NewButton("btools crash", "ButtonInfo", function()
     end
   end)
 
+Section:NewButton("scrash", "ButtonInfo", function()
+    
+    local LocalPlayer = game.Players.LocalPlayer
+
+    LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 1000000000000000000, 0)
+
+    local cmds = {":time 0", ":fogend 0", ":fogcolor 0 0 0"}
+    for _, first in pairs(cmds) do
+      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(first)
+    end
+      
+      task.wait(0.3)
+
+        local cmds = {":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others", ":smoke others"}
+        for _, second in pairs(cmds) do
+          while task.wait() do
+            workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(second)
+      end
+    end
+
+local cmds = {":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others", ":dog others"}
+    for _, third in pairs(cmds) do
+      while task.wait() do
+        workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(third)
+      end
+    end
+    
+local cmds = {":clone others", ":clone others", ":clone others", ":clone others", ":clone others"}
+for _, fourth in pairs(cmds) do
+      while task.wait(1) do
+        workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(fourth)
+      end
+    end
+  end)
+
 local Section = Tab:NewSection("Lighting")
 
 Section:NewButton("disco fog", "ButtonInfo", function()
     while task.wait(0.5) do
-      local cmds = {":fogend 100", ":fogcolor " .. math.random() .. " " .. math.random() .. " " .. math.random()}
+      local cmds = {":fogend 100", ":fogcolor " .. math.random() .. " " .. math.random() .. " " .. math.random(), ":ambient " .. math.random() .. " " .. math.random() .. " " .. math.random(), ":oambient " .. math.random() .. " " .. math.random() .. " " .. math.random()}
       for _, v in pairs(cmds) do
         workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
       end
@@ -258,7 +293,8 @@ Section:NewButton("Exploited Server Alarm[100+ Sales!]", "ButtonInfo", function(
     local cmds = {":music 259174997"}
       for _, v in pairs(cmds) do
       workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
-    end)
+    end
+  end)
 
 local Section = Tab:NewSection("gear glitches")
 
