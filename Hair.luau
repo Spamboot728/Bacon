@@ -245,6 +245,8 @@ Section:NewButton("scrash", "ButtonInfo", function()
     
     local LocalPlayer = game.Players.LocalPlayer
 
+    LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 1000000000000000000, 0)
+
     local cmds = {":time 0", ":fogend 0", ":fogcolor 0 0 0"}
     for _, first in pairs(cmds) do
       workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(first)
@@ -252,7 +254,7 @@ Section:NewButton("scrash", "ButtonInfo", function()
       
       task.wait(0.3)
 
-      local cmds = {":jail all", ":bring all"}
+      local cmds = {":jail all", ":bring all", ":m crashed by " .. LocalPlayer.Name .. " using retro_destruct"}
       for _, second in pairs(cmds) do
       workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(second)
     end
@@ -287,6 +289,17 @@ Section:NewButton("velocity break", "ButtonInfo", function()
     local cmds = {":gear me 119917513", ":gear me 110789105"}
     for _, v in pairs(cmds) do
       workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
+    end
+  end)
+
+local Section = Tab:NewSection("destruction")
+
+Section:NewButton("disco fog", "ButtonInfo", function()
+    local cmds = {":fogend 100", ":fogcolor " .. math.random(), math.random(), math.random()}
+    for _, v in pairs(cmds) do
+      while task.wait(0.2) do
+        workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
+      end
     end
   end)
 
