@@ -245,10 +245,17 @@ local Section = Tab:NewSection("Lighting")
 
 Section:NewButton("disco fog", "ButtonInfo", function()
     while task.wait(0.5) do
-      local cmds = {":fogend 100", ":fogcolor " .. math.random() .. " " .. math.random() .. " " .. math.random(), ":ambient " .. math.random() .. " " .. math.random() .. " " .. math.random(), ":oambient " .. math.random() .. " " .. math.random() .. " " .. math.random()}
+      local cmds = {":fogend 100", ":fogcolor " .. math.random() .. " " .. math.random() .. " " .. math.random(), ":ambient " .. math.random() .. " " .. math.random() .. " " .. math.random()}
       for _, v in pairs(cmds) do
         workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
       end
+    end
+  end)
+
+Section:NewButton("brightness", "ButtonInfo", function()
+    local cmds = {":brightness 99999"}
+      for _, v in pairs(cmds) do
+      workspace["Kohl's Admin Commands V2"].CMDBARREMOTE:FireServer(v)
     end
   end)
 
